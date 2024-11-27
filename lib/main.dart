@@ -1,6 +1,7 @@
-import 'dart:ui';
 
+import 'dart:ui';
 import 'package:app_mimic/pages/homepage.dart';
+import 'package:app_mimic/pages/product_detail_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       scrollBehavior: NoThumbScrollBehavior().copyWith(scrollbars: false),
       home: const Homepage(),
+
       debugShowCheckedModeBanner: false,
     );
   }

@@ -1,5 +1,7 @@
+
 import 'package:app_mimic/components/search.field.dart';
 import 'package:app_mimic/components/shop.container.dart';
+
 import 'package:flutter/material.dart';
 
 import '../constants/image.path.dart';
@@ -14,6 +16,7 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
 
       appBar: PreferredSize(
@@ -71,6 +74,9 @@ class _HomepageState extends State<Homepage> {
             ),
         ]
       ),
+
+
+    return const Scaffold(
 
     );
   }
