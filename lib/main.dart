@@ -1,3 +1,6 @@
+
+import 'dart:ui';
+import 'package:app_mimic/pages/homepage.dart';
 import 'package:app_mimic/pages/product_detail_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,11 +19,22 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ProductDetailPage(),
+      scrollBehavior: NoThumbScrollBehavior().copyWith(scrollbars: false),
+      home: const Homepage(),
+
       debugShowCheckedModeBanner: false,
     );
   }
 
+}
 
+class NoThumbScrollBehavior extends ScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+    PointerDeviceKind.stylus,
+    PointerDeviceKind.trackpad,
+  };
 }
 
