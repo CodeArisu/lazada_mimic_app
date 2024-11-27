@@ -46,7 +46,7 @@ class _ItemCardsState extends State<ItemCards> {
                 ),
                 Container(
                   height: 70,
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                     child: Column(
                       children: [
                         Align(
@@ -79,7 +79,7 @@ class _ItemCardsState extends State<ItemCards> {
                         ),
                         Align(
                           alignment: Alignment.bottomLeft,
-                          child: widget.itemName != null ? Text("star") : null,
+                          child: widget.itemName != null ? const Text("star") : null,
                         )
                       ],
                     )
@@ -112,7 +112,7 @@ class _ItemCardsState extends State<ItemCards> {
                   color: Colors.red, fontWeight: FontWeight.bold, fontSize: 9),
             ),
           ),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           Align(
               alignment: Alignment.centerLeft,
               child: widget.discountedPrice != null

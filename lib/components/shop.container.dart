@@ -37,11 +37,11 @@ class _ShopContainerState extends State<ShopContainer> {
                   children: [
                     Text(
                       leading,
-                      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900),
+                      style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900),
                     ),
                     Text(
                       trailing,
-                      style: TextStyle(fontSize: 12.0),
+                      style: const TextStyle(fontSize: 12.0),
                     ),
                   ],
                 ),
@@ -79,7 +79,7 @@ class _ShopContainerState extends State<ShopContainer> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Image(image: AssetImage(image), height: 40, width: 40,),
-            Text(title, style: TextStyle(fontSize: 10),)
+            Text(title, style: const TextStyle(fontSize: 10),)
           ],
         )
     ),
@@ -190,7 +190,7 @@ class _ShopContainerState extends State<ShopContainer> {
                                           matchTextDirection: true,
                                           width: 40,
                                           height: 40,
-                                          image: AssetImage('images/icon1.png'),
+                                          image: AssetImage('assets/icon1.png'),
                                         ),
                                       ),
                                 ),

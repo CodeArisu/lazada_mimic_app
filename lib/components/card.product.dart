@@ -1,16 +1,16 @@
+import 'package:app_mimic/pages/product_detail_page.dart';
 import 'package:flutter/material.dart';
 
 class CardProduct extends StatefulWidget {
-  const CardProduct({
-    super.key,
-    required this.itemName,
-    required this.itemPrice,
-    required this.discountedPrice,
-    required this.itemRate,
-    required this.itemSold,
-    required this.callback,
-    required this.imgSource
-  });
+  const CardProduct(
+      {super.key,
+      required this.itemName,
+      required this.itemPrice,
+      required this.discountedPrice,
+      required this.itemRate,
+      required this.itemSold,
+      required this.callback,
+      required this.imgSource});
 
   final String itemName;
   final String itemPrice, discountedPrice;
@@ -33,7 +33,13 @@ class _CardProductState extends State<CardProduct> {
         child: InkWell(
           onTap: () {
             widget.callback.call();
-            print('Card clicked!');
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+              builder: (context) => ProductDetailPage(),
+              settings: RouteSettings(arguments: {'showBackArrow': false}),
+              ),
+            );
           },
           borderRadius:
               BorderRadius.circular(10.0), // Matches Card border radius
@@ -44,7 +50,7 @@ class _CardProductState extends State<CardProduct> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             child: Column(
               crossAxisAlignment:
                   CrossAxisAlignment.start, // Align children to start
@@ -63,7 +69,7 @@ class _CardProductState extends State<CardProduct> {
                     children: [
                       Text(
                         widget.itemName,
-                        style: TextStyle(fontSize: 14),
+                        style: const TextStyle(fontSize: 14),
                         textAlign: TextAlign.start,
                         overflow: TextOverflow.ellipsis,
                       ), // Add spacing between texts
@@ -73,21 +79,25 @@ class _CardProductState extends State<CardProduct> {
                               children: <TextSpan>[
                             TextSpan(
                               text: "₱${widget.itemPrice} ",
-                              style: TextStyle(fontSize: 14, color: Colors.redAccent),
+                              style: const TextStyle(
+                                  fontSize: 14, color: Colors.redAccent),
                             ),
                             TextSpan(
                               text: "₱${widget.discountedPrice}",
-                              style: TextStyle(fontSize: 14, decoration: TextDecoration.lineThrough),
+                              style: const TextStyle(
+                                  fontSize: 14,
+                                  decoration: TextDecoration.lineThrough),
                             ),
                           ])),
                       Text(
                         'New User Save ₱${widget.discountedPrice}',
-                        style: TextStyle(fontSize: 14, color: Colors.redAccent),
+                        style: const TextStyle(
+                            fontSize: 14, color: Colors.redAccent),
                         textAlign: TextAlign.start,
                       ),
                       Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.star,
                             color: Colors.yellow,
                             size: 14,
@@ -98,11 +108,11 @@ class _CardProductState extends State<CardProduct> {
                             children: <TextSpan>[
                               TextSpan(
                                 text: " ${widget.itemRate}  ",
-                                style: TextStyle(fontSize: 14),
+                                style: const TextStyle(fontSize: 14),
                               ),
                               TextSpan(
                                 text: '${widget.itemSold} sold',
-                                style: TextStyle(fontSize: 14),
+                                style: const TextStyle(fontSize: 14),
                               ),
                             ],
                           )),

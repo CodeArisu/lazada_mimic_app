@@ -36,7 +36,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     padding: const EdgeInsets.symmetric(vertical: 12.0),
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: 'angels wings bich',
+                        hintText: 'labubu so cute so yummy',
                         hintStyle: const TextStyle(
                           color: Colors.black,
                           fontSize: 13,
@@ -109,11 +109,11 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             children: [
               // Product Image
               Container(
-                height: 460,
+                height: 300,
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/angels product.jpg'),
+                    image: AssetImage('assets/item7.jpg'),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -135,7 +135,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                               BorderRadius.circular(8),
                               border: Border.all(color: const Color(0XFfFF0066), width: 2),
                           image: const DecorationImage(
-                            image: AssetImage('assets/angels product.jpg'),
+                            image: AssetImage('assets/item7.jpg'),
                             fit: BoxFit.cover, 
                           ),
                         ),
@@ -151,7 +151,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           image: const DecorationImage(
-                            image: AssetImage('assets/angels product2.jpg'),
+                            image: AssetImage('assets/item7.jpg'),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -167,7 +167,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           image: const DecorationImage(
-                            image: AssetImage('assets/angels product3.jpg'),
+                            image: AssetImage('assets/item7.jpg'),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -185,7 +185,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
-                      '₱59.00',
+                      '₱30.65',
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -194,7 +194,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 5),
-                    child: Text('₱169.00',
+                    child: Text('₱63.00',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey[400],
@@ -213,7 +213,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       child: const Padding(
                         padding: EdgeInsets.symmetric(horizontal: 4.0),
                         child: Text(
-                          '65%',
+                          '51%',
                           style: TextStyle(
                             fontSize: 12,
                             color: Color(0XFfFF0066),
@@ -229,7 +229,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
-                  'Angel in Disguise Limited Edition Super rare fr fr ughhhh',
+                  '🔥New Style🔥cute Labubu Little Sheep Keychain Girls',
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -244,7 +244,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Row(
                   children: [
                     Text(
-                      'Wireless and long lasting',
+                      'Durable and long lasting',
                       style: TextStyle(
                         fontSize: 12, 
                         color: Color(0xFFA76F4A),
@@ -308,7 +308,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     Icon(Icons.star, color: Colors.orange, size: 16),
                     SizedBox(width: 4),
                     Text(
-                      '4.9(805)',
+                      '4.5(124)',
                       style: TextStyle(fontSize: 14, color: Colors.black),
                     ),
                     SizedBox(width: 8),
@@ -322,17 +322,17 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
 
                     // number of sold Items
                     Text(
-                      '13.8k sold',
+                      '325 sold',
                       style: TextStyle(fontSize: 12, color: Colors.black),
                     ),
                   ],
                 ),
               ),
-              Container(
-                height: 400,
-                width: double.infinity,
+            //   SizedBox(
+            //     height: 400,
+            //     width: double.infinity,
               
-            )
+            // )
             ],
             
           ),
@@ -359,7 +359,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             ),
             Text(
               'Store',
-              style: TextStyle(color: Colors.grey[700], fontSize: 5),
+              style: TextStyle(color: Colors.grey[700], fontSize: 10),
             ),
           ],
         ),
@@ -378,7 +378,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             ),
             Text(
               'Chat',
-              style: TextStyle(color: Colors.grey[700], fontSize: 5),
+              style: TextStyle(color: Colors.grey[700], fontSize: 10),
             ),
           ],
         ),
@@ -393,7 +393,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                minimumSize: const Size(double.infinity, 50), // Ensures uniform button height
+                minimumSize: const Size(double.infinity, 50), 
               ),
               onPressed: () {},
               child: const Text(

@@ -1,7 +1,8 @@
 import 'package:app_mimic/components/card.product.dart';
 import 'package:flutter/material.dart';
 import 'package:app_mimic/constants/image.path.dart';
-import 'package:app_mimic/constants/image.path.dart';
+import 'package:app_mimic/pages/product_detail_page.dart';
+
 
 class ItemMenu extends StatefulWidget {
   const ItemMenu({super.key});
@@ -17,15 +18,15 @@ class _ItemMenuState extends State<ItemMenu> {
   }
 
   Widget _gridContext() => GridView.builder(
-    padding: EdgeInsets.all(3),
-    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+    padding: const EdgeInsets.all(3),
+    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: 3,
         crossAxisSpacing: 5,
         childAspectRatio: 1 / 1.5
     ),
     itemCount: 10,
-    physics: NeverScrollableScrollPhysics(),
+    physics: const NeverScrollableScrollPhysics(),
     itemBuilder: (context, i) => CardProduct(
       itemName: '🔥New Style🔥cute Labubu Little Sheep Keychain Girls',
       itemPrice: "30.65",
@@ -34,7 +35,8 @@ class _ItemMenuState extends State<ItemMenu> {
       discountedPrice: "63.00",
       callback: () => {
         // dre e route
-      }, imgSource: img7,
+      }, 
+      imgSource: img7,
     ),
     shrinkWrap: true,
   );

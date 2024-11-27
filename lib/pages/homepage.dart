@@ -25,7 +25,7 @@ class _HomepageState extends State<Homepage> {
             backgroundColor: Colors.white,
             leading: IconButton(
                 onPressed: () => {} ,
-                icon: Image(
+                icon: const Image(
                   image: AssetImage(ico9), width: 100, height: 100,)
             ),
             title: const SearchFieldBar(),
@@ -74,9 +74,6 @@ class _HomepageState extends State<Homepage> {
             ),
         ]
       ),
-
-
-    return const Scaffold(
 
     );
   }
